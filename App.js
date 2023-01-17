@@ -16,6 +16,7 @@ import {createDrawerNavigator} from '@react-navigation/drawer';
 import Home from './Screens/Home';
 import Profile from './Screens/Profile';
 import {NavigationContainer} from '@react-navigation/native';
+// import Icon from 'react-native-vector-icons/dist/FontAwesome';
 
 const Drawer = createDrawerNavigator();
 
@@ -23,8 +24,8 @@ function App() {
   return (
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Feed" component={Home} />
-        <Drawer.Screen name="Article" component={Profile} />
+        <Drawer.Screen name="Deliver to:" component={Home} />
+        <Drawer.Screen name="Profile" component={Profile} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
